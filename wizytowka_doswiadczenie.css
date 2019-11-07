@@ -1,0 +1,55 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
+html {
+    font-size: 10px;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background: url(tlo.jpg) no-repeat center / cover ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+header nav a {
+    display: block;
+    width: 25%;
+    float: left;
+    padding: 15px 0px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.15rem;
+    background-color: darkcyan;
+    -webkit-transition: all 1s ease;
+}
+header nav a:hover {
+    background-color: darkslategray;
+    cursor: pointer;
+}
+.active {
+    background-color: darkslategray;
+}
+
+h1{
+    text-align: center;
+    margin: 15vh 10% 5vh 10%;
+    padding-bottom: 2vh;
+    color: white;
+    border-bottom: 2px solid black; 
+}
+
+ul{
+    font-size: 1.4rem;
+    color: black;
+    text-align: center;
+    margin: 0 10% 0 10%;
+    background-color: transparent;
+    padding-bottom: 15px;
+}
+
+
+

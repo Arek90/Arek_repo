@@ -1,0 +1,254 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
+html {
+    font-size: 10px;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background: url(tlo.jpg) no-repeat center / cover ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    z-index: 1;
+}
+
+header img {
+    position: absolute;
+    background-position: 50% 50%;
+    width: 40%;
+    height: 30%;
+    border-radius: 50% 50%;
+    top: 40%;
+    left: 30%;
+}
+
+header nav a {
+    display: block;
+    width: 25%;
+    float: left;
+    padding: 15px 0px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.15rem;
+    background-color: darkcyan;
+    
+}
+header nav a:hover {
+    background-color: darkslategray;
+    cursor: pointer;
+}
+
+.active {
+    background-color: darkslategray;
+}
+header hgroup {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    z-index: 1;
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+header h3 {
+    font-size: 2.3rem; 
+    font-weight: 400;
+}
+
+#arrow {
+    width: 42px;
+    height: 42px;
+    border: 3px solid black;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0px -15px 0 black, 0 15px 0 black;
+    overflow: hidden;
+    transition: arrow 1s ease;
+}
+
+#arrow:hover {
+    text-shadow: 0px -15px 0 white, 0 15px 0 white;
+    color: white;
+    border-color: white;
+    background-color: black;
+    cursor: pointer;
+}
+main{
+    position: relative;
+    height: 30vh;
+    box-sizing: border-box;
+    background-color: darkcyan;
+    margin-top: 100vh;
+    z-index: 2;
+}
+
+.OMnie {
+    box-sizing: border-box;
+    width: 90%;
+    height: 50%;
+    margin: 0% 5%;    
+}
+p {
+    position: relative;
+    width: 25%;
+    float: left;
+    top: 62%;
+}
+p1 {
+    width: 80%;
+    float: right;
+    border-left: 2px solid black;
+    padding-left: 15%;
+}
+p2 {
+    position: relative;
+    width: 25%;
+    float: left;
+    top: 70%;
+}
+p3 {
+    position: relative;
+    width: 80%;
+    float: right;
+    top: 30%;
+    border-left: 2px solid black;
+    padding-left: 15%;
+}
+.Kontakt {
+    box-sizing: border-box;
+    width: 90%;
+    height: 0%;
+    margin: 0% 5%;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (orientation: landscape) {
+    header img {
+        width: 20%;
+        height: 40%;
+        top: 25%;
+        left: 55%;
+    }
+    .Kontakt {
+        position: relative;
+        box-sizing: border-box;
+        width: 90%;
+        height: 25%;
+        margin: 0% 5%;
+        top: -10%;
+    }
+}
+
+@media (min-width: 440px) and (orientation: portrait){ 
+    header img {
+        width: 30%;
+        top: 40%;
+        left: 35%;
+    }
+    main {
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 540px) and (orientation: portrait){ 
+    header img {
+        width: 30%;
+        height: 35%;
+        top: 35%;
+        left: 35%;
+    }
+    
+    p {
+        top: 44%;
+    }
+    main {
+        font-size: 1.15rem;
+    }
+}
+@media (min-width: 600px) (orientation: portrait) { 
+    header img {
+        width: 25%;
+        height: 35%;
+        top: 35%;
+        left: 37%;
+    }
+    
+    p {
+        top: 48%;
+    }
+    main {
+        font-size: 1.18rem;
+    }
+}
+@media (min-width: 750px) { 
+    header img {
+        width: 22%;
+        height: 35%;
+        top: 35%;
+        left: 39%;
+    }
+    
+    p {
+        top: 55%;
+    }
+    main {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 880px){ 
+    header img {
+        width: 20%;
+        height: 35%;
+        top: 35%;
+        left: 40%;
+    }
+    main {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 980px){ 
+    header img {
+        width: 17%;
+        height: 35%;
+        top: 35%;
+        left: 41%;
+    }
+    main {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* ANIMACJE */
+@keyframes arrow {
+    0% {
+        transform: translateY(-80px)
+    }
+    50% {
+        transform: translateY(0px)
+    }
+    100%{
+        transform: translateY(80px)
+    }
+}
+
+.fa-angle-down{
+    animation: arrow 1.4s infinite linear;
+}

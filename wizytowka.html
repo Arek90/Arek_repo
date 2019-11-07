@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Stronka</title>
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <link rel="stylesheet" href="wizytowka.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=latin-ext" rel="stylesheet">
+    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!-- strzałka-->
+            
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="menu active" href="wizytowka.html">Home</a><a class="menu" href="wizytowka_doswiadczenie.html">Doświadczenie</a><a class="menu" href="wizytowka_technologie.html">Technologie</a><a class="menu" href="wizytowka_portfolio.html">Portfolio</a>
+        </nav>
+        <hgroup>
+            <h1>Arkadiusz Moszczyński</h1>
+            <h3>Junior Front End Developer</h3>
+        </hgroup>
+        <img src="naportale.jpg">
+        <div id="arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+    </header>
+    <main>
+       <div class="OMnie">
+        <p>O mnie</p>
+        <p1>Jestem osobą podchodzącą z zaangażowaniem do wyznaczonych celów, jak i ciągłego samorozwoju. Cenię sobie indywidualizm, choć w pracy zespołowej równie dobrze się odnajduję.<br>Z tworzeniem stron internetowych pierwszy raz miałem styczność kilka miesięcy temu i od tamtej pory zgłębiam wiedzę na temat Front End Developmentu. Aktualnie jestem uczestnikiem kursu w w/w tematyce organizowanej przez organizację Coders Crew.</p1>
+       </div>
+       <div class="Kontakt">
+        <p2>Kontakt</p2>
+        <p3>arekmoszczynski@gmail.com<br>Tel. +48 886551460</p3>
+      </div>
+    </main>
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var $arrow = $("arrow a");
+        var $off = $("main").offset().top;
+
+            $("#arrow").on("click", function () {
+            $("body, html").animate({
+                scrollTop: $("main").offset().top
+            }, 1200)
+            }) 
+    </script>
+    
+</body>
+
+</html>
