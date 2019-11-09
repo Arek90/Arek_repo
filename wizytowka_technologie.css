@@ -1,119 +1,127 @@
-*{margin: 0;padding: 0; box-sizing: border-box;}
-
-html {
-    font-size: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    height: 100vh;
-    width: 100%;
-    background: url(tlo.jpg) no-repeat center / cover ;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    font-family: "Roboto", sans-serif;
+html {
+  font-size: 10px;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: url(tlo.jpg) no-repeat center / cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 header nav a {
-    display: block;
-    width: 25%;
-    float: left;
-    padding: 15px 0px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.15rem;
-    background-color: darkcyan;
-    -webkit-transition: all 1s ease;
+  display: block;
+  width: 25%;
+  float: left;
+  padding: 15px 0px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.15rem;
+  background-color: darkcyan;
+  -webkit-transition: all 1s ease;
 }
 header nav a:hover {
-    background-color: darkslategray;
-    cursor: pointer;
+  background-color: darkslategray;
+  cursor: pointer;
 }
 .active {
-    background-color: darkslategray;
+  background-color: darkslategray;
 }
 
-h1{
-    text-align: center;
-    margin: 15vh 10% 5vh 10%;
-    padding-bottom: 2vh;
-    color: white;
-    border-bottom: 2px solid black; 
+h1 {
+  text-align: center;
+  margin: 15vh 10% 5vh 10%;
+  padding-bottom: 2vh;
+  color: white;
+  border-bottom: 2px solid black;
 }
 
 ul {
-    font-size: 1.4rem;
-    color: black;
-    text-align: left;
-    margin: 0 10% 30% 10%;
-    background-color: transparent;
-    padding-bottom: 15px;
-    
+  font-size: 1.4rem;
+  color: black;
+  text-align: left;
+  margin: 0 10% 30% 10%;
+  background-color: transparent;
+  padding-bottom: 15px;
 }
 .html img {
-    position: absolute;
-    background-position: 50% 50%;
-    width: 30%;
-    height: 30%;
-    border-radius: 50% 50%;
-    top: 26%;
-    left: 65%;
+  position: absolute;
+  background-position: 50% 50%;
+  width: 30%;
+  height: 30%;
+  border-radius: 50% 50%;
+  top: 26%;
+  left: 65%;
 }
 .css img {
-    position: absolute;
-    background-position: 50% 50%;
-    width: 30%;
-    height: 30%;
-    border-radius: 50% 50%;
-    top: 40%;
-    left: 24%;
+  position: absolute;
+  background-position: 50% 50%;
+  width: 30%;
+  height: 30%;
+  border-radius: 50% 50%;
+  top: 40%;
+  left: 24%;
 }
 .javascript img {
-    position: absolute;
-    background-position: 50% 50%;
-    width: 45%;
-    height: 30%;
-    border-radius: 30% 30%;
-    top: 62%;
-    left: 52%;
+  position: absolute;
+  background-position: 50% 50%;
+  width: 45%;
+  height: 30%;
+  border-radius: 30% 30%;
+  top: 62%;
+  left: 52%;
 }
 @media (orientation: landscape) {
-    ul {
+  ul {
     margin: 0 10% 8% 10%;
-    }
+  }
 }
-@media (min-width: 500px){ 
-    ul {
+@media (min-width: 500px) {
+  ul {
     margin: 0 10% 20% 10%;
-    }
+  }
 }
-@media (min-width: 650px){ 
-    ul {
+@media (min-width: 650px) {
+  ul {
     margin: 0 10% 18% 10%;
-    }
+  }
 }
-@media (min-width: 760px){ 
-    ul {
+@media (min-width: 760px) {
+  ul {
     margin: 0 10% 17% 10%;
-    }
+  }
 }
-@media (min-width: 840px){ 
-    ul {
+@media (min-width: 840px) {
+  ul {
     margin: 0 10% 16% 10%;
-    }
+  }
 }
-@media (min-width: 910px){ 
-    ul {
+@media (min-width: 910px) {
+  ul {
     margin: 0 10% 15% 10%;
-    }
-@media (min-width: 960px){ 
-    ul {
+  }
+}
+
+/* Brak nawiasów */
+@media (min-width: 960px) {
+  ul {
     margin: 0 10% 14% 10%;
-    }
-@media (min-width: 1100px){ 
-    ul {
+  }
+}
+
+@media (min-width: 1100px) {
+  ul {
     margin: 0 10% 13% 10%;
-    }
+  }
 }
