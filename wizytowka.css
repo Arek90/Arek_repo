@@ -1,4 +1,4 @@
-/* Staraj się nie stylować po tagach, do tego służą klasy. */
+/* Staraj się nie stylować po tagach, do tego służą klasy. Nie użyłeś nigdzie ani flexa ani grida, które służą do tworzenie responsywnych stron. Powiedzmy, że strona jest responsywna, chociaż na małych rozdzielnościach niektóre rzeczy wyglądają słabo.  */
 
 * {
   margin: 0;
